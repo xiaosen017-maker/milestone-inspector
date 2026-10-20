@@ -1,0 +1,24 @@
+name: Feature request
+description: Propose a bounded improvement to inspection or snapshot evidence.
+title: "feat: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Describe the review or reproducibility problem with a concrete example.
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected behavior
+      description: State the observable CLI or report behavior you expect.
+    validations:
+      required: true
+  - type: textarea
+    id: limits
+    attributes:
+      label: Trust boundary and compatibility
+      description: Note effects on schema v1, Git versions, platforms, or untrusted repositories.
